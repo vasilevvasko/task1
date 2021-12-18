@@ -1,0 +1,17 @@
+<div>
+  <form [formGroup]="todoForm">
+    <div>
+      <input mdbInput type="text" name="name" placeholder="" formControlName="Name"/>
+      <input mdbInput type="text" name="description" placeholder="" formControlName="Description"/>
+      <input mdbInput type="datetime-local" name="dueDate" placeholder="" formControlName="dueDate"/>
+    </div>
+  </form>
+</div>
+<div *ngFor="let dataPiece of data">
+  <p>{{dataPiece.id}}</p>
+  <p>{{dataPiece.name}}</p>
+  <p>{{dataPiece.description}}</p>
+  <p>{{dataPiece.dueDate}}</p>
+  <p>{{dataPiece.isDone}}</p>
+</div>
+
